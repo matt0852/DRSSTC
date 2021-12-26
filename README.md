@@ -23,11 +23,16 @@ I wanted to build a small tesla coil. Here were my design considerations.
 - Spark length: up to 350mm long sparks
 
 ## Schematics
+I designed this half bridge with the intention of keeping all the components on one double-sided PCB. The schematic, PCB layout and gerber files can be found in the source folder. Here is an image for quick reference.
+
+
+![combined](https://user-images.githubusercontent.com/77631844/147400215-21d9aaf2-b350-480b-b33e-49f000c4583b.png)
+
+
 The driver circuit is a modified version of Steve Ward's Universal Driver 1.3. Driver schematics and PCB layout can be found here https://www.stevehv.4hv.org/new_driver.html
 
 
-The bridge schematic and PCB layout can be found here.
-![combined](https://user-images.githubusercontent.com/77631844/147400215-21d9aaf2-b350-480b-b33e-49f000c4583b.png)
+For convenience, I used OneTesla's SD card interrupter which can be bought here https://onetesla.com/products/kits/interrupters-all/sd-card-interrupter-kit.html
 
 
 ## Credits
