@@ -3,6 +3,8 @@ My design for a tabletop Dual Resonant Solid State Tesla Coil that plays music.
 
 ![DSCF1054-min](https://user-images.githubusercontent.com/77631844/147196841-2f51533f-dd98-4717-a3a5-8b63a7450f19.JPG)
 
+https://www.youtube.com/watch?v=nWpaaL6Mb5Y
+
 ## Introduction
 I wanted to build a small tesla coil. Here were my design considerations.
 - Footprint of less than 50cm by 50cm
