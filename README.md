@@ -36,7 +36,7 @@ For convenience, I used OneTesla's SD card interrupter which can be bought here 
 
 ## Construction
 I started by winding the secondary coil based on the specifications above. To make my life easier, I built a motorised jig with spare Lego pieces lying around to wind the secondary coil. Took a good 2 days of careful winding.
-![Screenshot 2021-12-26 161111](https://user-images.githubusercontent.com/77631844/147403266-e0e4cd22-9d5f-4aed-a9ca-8d45c600c2f6.png)
+![Screenshot 2021-12-26 161111](https://user-images.githubusercontent.com/77631844/147403341-2a75f72a-9dc5-49ab-b43f-539acef5f893.png)
 
 
 The gate drive transformer (GDT) is used to isolate the drive circuitry from the half bridge (refer to the half bridge schematic). Three equal lengths of stranded copper wire were carefully braided together, then I wound the whole bundle onto a ferrite toroid with 15 equally spaced turns. I chose a 37.50mm N30 ferrite toroid with an initial permeability of 4300 and rated for MHz use (Digikey 495-3869-ND). Iron cores don't work and neither do EMI suppression cores. Scoping the two GDT secondaries with a 1MHz function generator hooked to the primary reveals decent square waves.
