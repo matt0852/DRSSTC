@@ -22,7 +22,7 @@ I wanted to build a small tesla coil. Here were my design considerations.
 - Secondary coil: acrylic tube, 6cm diameter, 18.3cm height, ~1350 turns of AWG36 enamelled copper wire
 - Topload: styrofoam torus wrapped with aluminum tape, 4.5cm minor dia, 21.5cm major dia
 - Resonant frequency: 242kHz
-- Spark length: up to 350mm long sparks
+- Spark length: up to 300mm long sparks
 
 ## Schematics
 I designed this half bridge with the intention of keeping all the components on one double-sided PCB. The copper traces must be designed to withstand high currents (hundreds of amps) while maintaining a low inductance PCB layout. I decided to drive my IGBTs at 24V with 33V gate-source zeners to clamp any sudden voltage spikes that would destroy the IGBTs. Schematic, PCB layout and gerber files can be found in this repository.
@@ -61,6 +61,10 @@ Construction of the rest of the tesla coil was straightforward. I used a suitabl
 The driver circuit worked well after fixing some bad mechanical connections. Scoping the GDT output shows clean 24V square waves with minimal distortion. First light was achieved at 30VDC. 
 
 ![Screenshot 2021-12-26 175753](https://user-images.githubusercontent.com/77631844/147404788-7031a692-fb9c-47b5-af43-35ce83d6d894.png)
+
+At 325VDC (from rectified 230VAC), the coil was producing streamers as long as 350mm with only 50-100uS on-time.
+
+![Screenshot 2021-12-26 235126](https://user-images.githubusercontent.com/77631844/147413343-0778f39c-6209-4366-b585-8de0f16d05f0.png)
 
 ## Credits
 Loneocean's DRSSTC 1 https://www.loneoceans.com/labs/drsstc1/
