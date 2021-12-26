@@ -14,7 +14,7 @@ I wanted to build a small tesla coil. Here were my design considerations.
 
 ## Specifications
 - Bridge: 2x IGW75N65H5XKSA1 IGBTs in a half bridge configuration
-- Supply: 230VAC 
+- Supply: 325VDC (from rectified 230VAC)
 - Primary coil: 3D printed standoffs, 12cm dia, 2cm height, 5.6 turns of AWG14 stranded copper wire, 18% detuned for streamer loading
 - Tank capacitor: 1x Cornell Dubilier (CDE) 940C30S68K-F capacitor 0.068uF 3kVDC
 - Secondary coil: acrylic tube, 6cm diameter, 18.3cm height, ~1350 turns of AWG36 enamelled copper wire
@@ -23,11 +23,11 @@ I wanted to build a small tesla coil. Here were my design considerations.
 - Spark length: up to 350mm long sparks
 
 ## Schematics
-I designed this half bridge with the intention of keeping all the components on one double-sided PCB. The copper traces must be designed to withstand high currents (hundreds of amps) while maintaining a low inductance PCB layout. The schematic, PCB layout and gerber files can be found in the source folder. Here is an image for quick reference. I am driving my IGBTs at 24V, with 33V zeners and TVS in series to clamp any sudden voltage spikes.
+I designed this half bridge with the intention of keeping all the components on one double-sided PCB. The copper traces must be designed to withstand high currents (hundreds of amps) while maintaining a low inductance PCB layout. The schematic, PCB layout and gerber files can be found in the source folder. Here is an image for quick reference. I decided to drive my IGBTs at 24V with 33V gate-source zeners to clamp any sudden voltage spikes that would destroy the IGBTs.
 
 ![combined](https://user-images.githubusercontent.com/77631844/147400215-21d9aaf2-b350-480b-b33e-49f000c4583b.png)
 
-The driver circuit is a modified version of Steve Ward's Universal Driver 1.3. The schematic, PCB layout and gerber files can be found here https://www.stevehv.4hv.org/new_driver.html
+The driver circuit is a modified version of Steve Ward's Universal Driver 1.3. It relies on feedback from the primary coil to ensure that the entire system is oscillating as close to its resonant frequency as possible. The driver features P/N mosfet pairs for robust gate drive at 24V, and also includes over-current detection for safety. The schematic, PCB layout and gerber files can be found here https://www.stevehv.4hv.org/new_driver.html
 
 For convenience, I used OneTesla's SD card interrupter which can be bought here https://onetesla.com/products/kits/interrupters-all/sd-card-interrupter-kit.html. The signal from the interrupter will be fed to the driver circuit optically via a simple fiber optic setup.
 
@@ -39,6 +39,11 @@ I started by winding the secondary coil based on the specifications above. To ma
 The gate drive transformer (GDT) is used to isolate the drive circuitry from the half bridge (refer to the half bridge schematic). Three equal lengths of stranded copper wire were carefully braided together, then I wound the whole bundle onto a ferrite toroid with 15 equally spaced turns. I chose a 37.50mm N30 ferrite toroid with an initial permeability of 4300 and rated for MHz use (Digikey 495-3869-ND). Iron cores don't work and neither do EMI suppression cores. Scoping the two GDT secondaries with a 1MHz function generator hooked to the primary reveals decent square waves.
 
 ![Screenshot 2021-12-26 161003](https://user-images.githubusercontent.com/77631844/147403421-e81411cb-434e-4ec1-a477-07cd6583c849.png)
+
+I used Allpcb's service (https://allpcb.com/) to fabricate my PCBs at a low cost. Here is my completed driver circuit with the GDT and feedback transformers hooked up. The feedback transformers rely on feedback from the primary coil. They are made of the same ferrite toroids as the GDT and have a 1:1000 primary:secondary ratio (two cascaded 1:33 transformers).
+
+![Screenshot 2021-12-26 165540](https://user-images.githubusercontent.com/77631844/147403908-294ef39f-fdab-4b35-ba35-01309a868e3f.png)
+
 
 ## Credits
 Loneocean's DRSSTC 1 https://www.loneoceans.com/labs/drsstc1/
