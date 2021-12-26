@@ -29,6 +29,8 @@ I designed this half bridge with the intention of keeping all the components on 
 
 The driver circuit is a modified version of Steve Ward's Universal Driver 1.3. It relies on feedback from the primary coil to ensure that the entire system is oscillating as close to its resonant frequency as possible. The driver features P/N mosfet pairs for robust gate drive at 24V, and also includes over-current detection for safety. The schematic, PCB layout and gerber files can be found here https://www.stevehv.4hv.org/new_driver.html
 
+![Screenshot 2021-12-26 190458](https://user-images.githubusercontent.com/77631844/147406119-414e0b2b-2fcf-4fe5-a980-b168c493c503.png)
+
 For convenience, I used OneTesla's SD card interrupter which can be bought here https://onetesla.com/products/kits/interrupters-all/sd-card-interrupter-kit.html. The signal from the interrupter will be fed to the driver circuit optically via a simple fiber optic setup.
 
 ## Construction
@@ -52,7 +54,7 @@ Construction of the rest of the tesla coil was straightforward. I used a suitabl
 
 ![Screenshot 2021-12-26 174341](https://user-images.githubusercontent.com/77631844/147404478-f517c696-4d7b-4f2b-9d1a-aadb5f6030d4.png)
 
-## First light and more pictures
+## Testing and more pictures
 
 The driver circuit worked well after fixing some bad mechanical connections. Scoping the GDT output shows clean 24V square waves with minimal distortion. First light was achieved at 30VDC. 
 
