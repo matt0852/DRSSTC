@@ -25,9 +25,9 @@ I wanted to build a small tesla coil. Here were my design considerations.
 - Spark length: up to 350mm long sparks
 
 ## Schematics
-I designed this half bridge with the intention of keeping all the components on one double-sided PCB. The copper traces must be designed to withstand high currents (hundreds of amps) while maintaining a low inductance PCB layout. The schematic, PCB layout and gerber files can be found in the source folder. Here is an image for quick reference. I decided to drive my IGBTs at 24V with 33V gate-source zeners to clamp any sudden voltage spikes that would destroy the IGBTs.
+I designed this half bridge with the intention of keeping all the components on one double-sided PCB. The copper traces must be designed to withstand high currents (hundreds of amps) while maintaining a low inductance PCB layout. I decided to drive my IGBTs at 24V with 33V gate-source zeners to clamp any sudden voltage spikes that would destroy the IGBTs. Schematic, PCB layout and gerber files can be found in this repository.
 
-![combined](https://user-images.githubusercontent.com/77631844/147400215-21d9aaf2-b350-480b-b33e-49f000c4583b.png)
+![Screenshot 2021-12-26 190458](https://user-images.githubusercontent.com/77631844/147412710-753dd043-2dd6-46cf-a8db-f1eb3a4ca3a1.png)
 
 The driver circuit is a modified version of Steve Ward's Universal Driver 1.3. It relies on feedback from the primary coil to ensure that the entire system is oscillating as close to its resonant frequency as possible. The driver features P/N mosfet pairs for robust gate drive at 24V, and also includes over-current detection for safety. The schematic, PCB layout and gerber files can be found here https://www.stevehv.4hv.org/new_driver.html
 
