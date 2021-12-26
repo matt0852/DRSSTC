@@ -27,9 +27,7 @@ The driver circuit is a modified version of Steve Ward's Universal Driver 1.3. D
 
 
 The bridge schematic and PCB layout can be found here.
-![halfbridge](https://user-images.githubusercontent.com/77631844/147400089-2a455122-e7fb-434a-9402-16463eaf2244.png)
-![halfbridge_PCBtop](https://user-images.githubusercontent.com/77631844/147400094-3f8f508c-b6ab-4df3-a81f-54423f0fe1e0.png)
-![halfbridge_PCBbottom](https://user-images.githubusercontent.com/77631844/147400096-2de54060-961c-4cc2-9bca-bd7d6505f28f.png)
+![combined](https://user-images.githubusercontent.com/77631844/147400215-21d9aaf2-b350-480b-b33e-49f000c4583b.png)
 
 
 ## Credits
