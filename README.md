@@ -36,7 +36,7 @@ I started by winding the secondary coil based on the specifications above. To ma
 
 ![Screenshot 2021-12-26 161111](https://user-images.githubusercontent.com/77631844/147403341-2a75f72a-9dc5-49ab-b43f-539acef5f893.png)
 
-The gate drive transformer (GDT) is used to isolate the drive circuitry from the half bridge (refer to the half bridge schematic). Three equal lengths of stranded copper wire were carefully braided together, then I wound the whole bundle onto a ferrite toroid with 15 equally spaced turns. I chose a 37.50mm N30 ferrite toroid with an initial permeability of 4300 and rated for MHz use (Digikey 495-3869-ND). Iron cores don't work and neither do EMI suppression cores. Scoping the two GDT secondaries with a 1MHz function generator hooked to the primary reveals decent square waves.
+The gate drive transformer (GDT) is used to isolate the drive circuitry from the half bridge (refer to the half bridge schematic). Three equal lengths of stranded copper wire were carefully braided together, then I wound the whole bundle onto a ferrite toroid with 15 equally spaced turns. I chose a 37.50mm N30 ferrite toroid with an initial permeability of 4300 and rated for MHz use (Digikey 495-3869-ND). Iron cores don't work and neither do EMI suppression cores. Scoping the two GDT secondaries with a 1MHz function generator hooked to the primary reveals decent square waves. It is CRUCIAL to have an oscilloscope for debugging purposes!
 
 ![Screenshot 2021-12-26 161003](https://user-images.githubusercontent.com/77631844/147403421-e81411cb-434e-4ec1-a477-07cd6583c849.png)
 
@@ -48,9 +48,15 @@ Here is the half bridge PCB with almost all components in place. Heatsinks were 
 
 ![Screenshot 2021-12-26 173756](https://user-images.githubusercontent.com/77631844/147404371-0a68236d-ddc5-4f0a-b5f6-a76aa75915d5.png)
 
-Construction of the rest of the tesla coil was straightforward. I used a suitably large piece of acrylic as a base, and glued the secondary coil in place. The topload was created by carefully pasting aluminum tape onto a styrofoam toroid, and a breakout point made of copper tubing was attached. I 3D-printed some standoffs for the primary coil and wound the primary coil carefully as such. I then secured everything in place with more glue and cable ties. I added a mains step-down transformer to provide 24VDC for the driver circuit. You can also see the large tank capacitor (in white) in series with the primary coil and the larger electrolytic capacitor behind. Refer to the specifications and the schematics for details regarding these components.
+Construction of the rest of the tesla coil was straightforward. I used a suitably large piece of acrylic as a base, and glued the secondary coil in place. The topload was created by carefully pasting aluminum tape onto a styrofoam toroid, and a breakout point made of copper tubing was attached. The primary coil was wound and supported with eight 3D-printed standoffs. I then secured everything in place with more glue and cable ties. I added a mains step-down transformer to provide 24VDC for the driver circuit. You can also see the large tank capacitor (in white) in series with the primary coil and the larger electrolytic capacitor behind. Refer to the specifications and the half bridge schematic (C1 and C5) for more details regarding these components. Finally I added a makeshift Faraday's cage over the driver circuit with a plastic box wrapped with aluminum tape.
 
 ![Screenshot 2021-12-26 174341](https://user-images.githubusercontent.com/77631844/147404478-f517c696-4d7b-4f2b-9d1a-aadb5f6030d4.png)
+
+## First light and more pictures
+
+The driver circuit worked well after fixing some bad mechanical connections. Scoping the GDT output shows clean 24V square waves with minimal distortion. First light was achieved at 30VDC. 
+
+![Screenshot 2021-12-26 175753](https://user-images.githubusercontent.com/77631844/147404788-7031a692-fb9c-47b5-af43-35ce83d6d894.png)
 
 ## Credits
 Loneocean's DRSSTC 1 https://www.loneoceans.com/labs/drsstc1/
