@@ -40,10 +40,17 @@ The gate drive transformer (GDT) is used to isolate the drive circuitry from the
 
 ![Screenshot 2021-12-26 161003](https://user-images.githubusercontent.com/77631844/147403421-e81411cb-434e-4ec1-a477-07cd6583c849.png)
 
-I used Allpcb's service (https://allpcb.com/) to fabricate my PCBs at a low cost. Here is my completed driver circuit with the GDT and feedback transformers hooked up. The feedback transformers rely on feedback from the primary coil. They are made of the same ferrite toroids as the GDT and have a 1:1000 primary:secondary ratio (two cascaded 1:33 transformers).
+I used Allpcb's service (https://allpcb.com/) to fabricate my PCBs at a low cost. Here is the completed driver circuit with the GDT and feedback transformers hooked up. The feedback transformers rely on feedback from the primary coil. They are made of the same ferrite toroids as the GDT and have a 1:1000 primary:secondary ratio (two cascaded 1:33 transformers).
 
 ![Screenshot 2021-12-26 165540](https://user-images.githubusercontent.com/77631844/147403908-294ef39f-fdab-4b35-ba35-01309a868e3f.png)
 
+Here is the half bridge PCB with almost all components in place. Heatsinks were attached to each IGBT for heat dissipation. I was really happy with how it turned out!
+
+![Screenshot 2021-12-26 173756](https://user-images.githubusercontent.com/77631844/147404371-0a68236d-ddc5-4f0a-b5f6-a76aa75915d5.png)
+
+Construction of the rest of the tesla coil was straightforward. I used a suitably large piece of acrylic as a base, and glued the secondary coil in place. The topload was created by carefully pasting aluminum tape onto a styrofoam toroid, and a breakout point made of copper tubing was attached. I 3D-printed some standoffs for the primary coil and wound the primary coil carefully as such. I then secured everything in place with more glue and cable ties. I added a mains step-down transformer to provide 24VDC for the driver circuit. You can also see the large tank capacitor (in white) in series with the primary coil and the larger electrolytic capacitor behind. Refer to the specifications and the schematics for details regarding these components.
+
+![Screenshot 2021-12-26 174341](https://user-images.githubusercontent.com/77631844/147404478-f517c696-4d7b-4f2b-9d1a-aadb5f6030d4.png)
 
 ## Credits
 Loneocean's DRSSTC 1 https://www.loneoceans.com/labs/drsstc1/
