@@ -13,18 +13,24 @@ I wanted to build a small tesla coil. Here were my design considerations.
 - Able to operate on 230VAC
 
 ## Specifications
-Technical specifications
+- Bridge: 2x IGW75N65H5XKSA1 IGBTs in a half bridge configuration
+- Supply: 230VAC 
+- Primary coil: 3D printed standoffs, 12cm dia, 2cm height, 5.6 turns of AWG14 stranded copper wire, 18% detuned for streamer loading
+- Tank capacitor: 1x Cornell Dubilier (CDE) 940C30S68K-F capacitor 0.068uF 3kVDC
 - Secondary coil: acrylic tube, 6cm diameter, 18.3cm height, ~1350 turns of AWG36 enamelled copper wire
 - Topload: styrofoam torus wrapped with aluminum tape, 4.5cm minor dia, 21.5cm major dia
-- Primary coil: 3D printed standoffs, 12cm dia, 2cm height, 5.6 turns of AWG14 stranded copper wire, 18% detuned for streamer loading
-- Tank capacitor: CDE 0.068uF
-
-Half bridge
-- IGBTs: IGW75N65H5XKSA1
-
-Measurements
 - Resonant frequency: 242kHz
-- Coupling: 0.186
+- Spark length: up to 350mm long sparks
+
+## Schematics
+The driver circuit is a modified version of Steve Ward's Universal Driver 1.3. Driver schematics and PCB layout can be found here https://www.stevehv.4hv.org/new_driver.html
+
+
+The bridge schematic and PCB layout can be found here.
+![halfbridge](https://user-images.githubusercontent.com/77631844/147400089-2a455122-e7fb-434a-9402-16463eaf2244.png)
+![halfbridge_PCBtop](https://user-images.githubusercontent.com/77631844/147400094-3f8f508c-b6ab-4df3-a81f-54423f0fe1e0.png)
+![halfbridge_PCBbottom](https://user-images.githubusercontent.com/77631844/147400096-2de54060-961c-4cc2-9bca-bd7d6505f28f.png)
+
 
 ## Credits
 Loneocean's DRSSTC 1 https://www.loneoceans.com/labs/drsstc1/
